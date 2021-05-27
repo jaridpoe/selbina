@@ -1,0 +1,15 @@
+version: 2.1
+
+orbs:
+  eb: circleci/aws-elastic-beanstalk@1.0.0
+workflows:
+  elastic-beanstalk-workflow:
+    jobs:
+      - eb/deploy:
+          context: aws-creds
+          environment-name: Selbina-env
+          filters:
+            branches:
+              only:
+                - main
+          label: Sample Application

@@ -1,0 +1,19 @@
+{
+  "name": "selbina",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {},
+  "dependencies": {
+    "express": "^4.17.1",
+    "path": "^0.12.7",
+    "pm2": "^4.5.6"
+  }
+}
