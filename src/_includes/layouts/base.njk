@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="images/icon.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="images/icon.png">
+        {% seo '' %}
+        <link rel="stylesheet" href="/css/style.css">
+
+        <!-- Fathom - beautiful, simple website analytics -->
+        <script src="https://cdn.usefathom.com/script.js" data-site="YBTCKTYH" defer></script>
+        <!-- / Fathom -->
+    </head>
+
+    <body>
+
+        {{ content | safe }}
+
+        <script>
+            {% inline 'alpinejs@2.8.1/dist/alpine.js' %}
+        </script>
+
+    </body>
+</html>
